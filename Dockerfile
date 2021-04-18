@@ -52,7 +52,7 @@ WORKDIR /opt/my-app
 RUN mvn clean package
 
 #changing working dir
-WORkDIR /opt/tomcat8/webapps/
+WORKDIR /opt/tomcat8/webapps/
 
 #Copy war file to current dir
 RUN cp /opt/my-app/target/myweb-0.0.15.war .
